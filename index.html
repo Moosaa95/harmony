@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My BookList App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display mt-4">
+            <i class="fa fa-desktop text-primary"></i>
+            My<span class="text-primary">Harmony</span>Hub</h1>
+            <form class="form" id="book-form">
+                <div class="form-group">
+                    <label>S/N</label>
+                    <input type="number" id="sn" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>FullName</label>
+                    <input type="text" id="fName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control"  id="email">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" id="pNum" maxlength="12">
+                </div>
+                <div class="form-group">
+                    <label>Area of Residence</label>
+                    <input type="number" class="form-control" id="aor">
+                </div>
+
+                <input type="submit" value="Add Record" class="btn btn-primary btn-block">
+            </form>
+            <table class="table table-striped mt-5 tab" id="tab">
+                <thead>
+                    <tr>
+                        <td>S/N</td>
+                        <td>FullName</td>
+                        <td>Email</td>
+                        <td>Phone Number</td>
+                        <td>Area of Residence <br><small>e.g Kubwa, gwarinpa, lugbe etc</small></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="body-list"></tbody>
+            </table>
+
+            <button type="button" id="print" class="btn btn-primary btn-block">
+                <i class="fas fa-save"></i>&nbsp;Print
+            </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
